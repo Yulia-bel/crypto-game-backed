@@ -26,5 +26,9 @@ export default {
     user: process.env.DB_USER,
     pass: process.env.DB_PASS,
     name: process.env.DB_NAME
+  },
+  mail: {
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS
   }
 };

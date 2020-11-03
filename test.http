@@ -12,8 +12,8 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-  "email" : "admin@admin.com",
-  "password" : "admin11"
+  "email" : "",
+  "password" : ""
 }
 
 ###
@@ -127,15 +127,15 @@ POST  http://localhost:3000/password/forgot
 Content-Type: application/json
 
 {
-  "email" : "admin@admin.com"
+  "email" : "marta@assembler.com"
 }
 
 
 ###
 POST  http://localhost:3000/password/reset
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjAzOTkyNDQ0LCJleHAiOjE2MDM5OTYwNDR9.RZ1zFe6eUwJEmEKd4U_cW6Iz2gNcA4lx78iKybNy1zw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjA0MDAzNDE4LCJleHAiOjE2MDQwMDcwMTh9.mv_UDYHDeACGAdhe7HkNR4dHGSz07iJFsf0auXvrIE0
 Content-Type: application/json
 
 {
-  "password" : "admin11"
+  "password" : "111222"
 }

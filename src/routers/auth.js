@@ -100,13 +100,13 @@ router.post('/password/forgot', async (req, res) => {
   if (user == null) return res.status(400).json({ data: null, error: 'Email doesn\'t exists' });
 
   const resetToken = jwt.sign({ id: user.user_id }, config.app.resetTokenSecret, {expiresIn: '1h'});
-
+  console.log(resetToken)
   const transporter = nodemailer.createTransport({
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "47a83c571978c6",
-      pass: "2140eb382e5def"
+      user: config.mail.user,
+      pass: config.mail.pass
     }
   });
 
